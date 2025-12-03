@@ -78,9 +78,11 @@ npx http-server
 - Pixel-art inspired graphics
 
 ### Audio
-- Dynamic background music with multiple melody sections
-- Jump, death, score, and victory sound effects
-- Retro chiptune style using Web Audio API
+- Authentic Donkey Kong background music (MP3)
+- Jump and walking sound effects from original game
+- Web Audio API for seamless music looping
+- HTML5 Audio fallback for maximum compatibility
+- Mobile-optimized audio initialization
 
 ## 📁 Project Structure
 
@@ -89,6 +91,9 @@ npx http-server
 ├── index.html          # Main HTML entry point
 ├── game.js             # Complete game implementation
 ├── kiro-logo.png       # Player sprite
+├── backmusic.mp3       # Background music
+├── jump.wav            # Jump sound effect
+├── walking.wav         # Walking sound effect
 └── README.md           # This file
 ```
 
@@ -101,23 +106,28 @@ This game was created as part of the AWS Re:Invent workshop, demonstrating how t
 - ✅ Single-screen platformer level
 - ✅ Player character with Kiro logo sprite
 - ✅ Barrel enemies with realistic physics
+- ✅ Fireball enemies with bouncing and ladder navigation
 - ✅ Ladder climbing mechanics
 - ✅ Angled platforms for dynamic barrel movement
 - ✅ Score and lives system
-- ✅ High score persistence
+- ✅ High score persistence with smart confetti triggers
 - ✅ Particle effects (explosions, confetti)
-- ✅ Background music and sound effects
+- ✅ Authentic Donkey Kong audio (background music, jump, walking)
+- ✅ Seamless audio looping with Web Audio API
 - ✅ Detailed Donkey Kong sprite with animation
+- ✅ Frame-rate independent gameplay (locked to 60 FPS)
 - ✅ Mobile responsive design
-- ✅ Touch controls for mobile
+- ✅ Touch controls for mobile with audio initialization
 
 ## 🎮 Gameplay Tips
 
 1. **Timing is Everything**: Wait for the right moment to move between platforms
-2. **Use Ladders Wisely**: Climb up or down to avoid barrels
-3. **Jump Over Barrels**: Earn bonus points by jumping over barrels instead of avoiding them
-4. **Watch the Angles**: Barrels roll downhill on angled platforms
-5. **Invincibility Period**: After losing a life, you have 2 seconds of invincibility (flickering)
+2. **Use Ladders Wisely**: Climb up or down to avoid barrels and fireballs
+3. **Jump Over Barrels**: Earn 100 bonus points by jumping over barrels
+4. **Jump Over Fireballs**: Earn 200 bonus points by jumping over fireballs
+5. **Watch the Angles**: Barrels roll downhill on angled platforms
+6. **Beware of Fireballs**: They bounce periodically and can climb down ladders
+7. **Invincibility Period**: After losing a life, you have 2 seconds of invincibility (flickering)
 
 ## 📝 License
 
